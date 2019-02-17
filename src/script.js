@@ -90,7 +90,7 @@ document.getElementById('scrollHomeDown').addEventListener("click", function() {
 // ====================== BUTTON TO TOP ====================== //
 
 document.getElementById('btnTop').addEventListener("click", function() {
-	location = "#skrollr-body";
+	location = "#home1";
 });
 
 
