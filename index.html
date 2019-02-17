@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Helianthus</title>
+	<title>Helianthus Software</title>
 
 	<meta charset="utf-8">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -127,10 +127,10 @@
 			-skrollr-animation-name: animCta;
 		}
 		@-skrollr-keyframes animCta {
-			-100-bottom {
+			-120-bottom {
 				width: 48px;
 			}
-			-101-bottom {
+			-121-bottom {
 				width: 246px;
 			}
 		}
@@ -140,7 +140,7 @@
 
 <body id="body">
 
-<main id="main">
+<main id="skrollr-body">
 	
 	<nav class="nav-desktop">
 		<div class="nav-desktop-wrap">
@@ -359,7 +359,7 @@
 	<script type="text/javascript" src="src\skrollr.stylesheets.min.js"></script>
 	<script type="text/javascript" src="src\skrollr.min.js"></script>
 	<script type="text/javascript">
-		var s = skrollr.init();
+		var s = skrollr.init({forceHeight: false});
 	</script>
 </body>
 </html>
