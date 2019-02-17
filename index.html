@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Helianthus</title>
+
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="HandheldFriendly" content="true"> -->
+
+	<link rel="icon" type="image/png" href="src\assets\icon\ic_helianthus-green_0.5x.png">
+	<link rel="stylesheet" type="text/css" href="src\reset.min.css">
+	<link rel="stylesheet" type="text/css" href="src\style.css">
+	<link rel="stylesheet" type="text/css" href="src\ripple.css">
+	
+	<style>
+		#home1 {
+			-skrollr-animation-name: animHeroBgPar;
+		}
+		@-skrollr-keyframes animHeroBgPar {
+			top {
+				background-position: center 0vh;
+			}
+			top-bottom {
+				background-position: center -25vh;
+			}
+		}
+
+
+		#heroImg {
+			-skrollr-animation-name: animHeroImgPar;
+			-skrollr-anchor-target: #home1;
+		}
+		@-skrollr-keyframes animHeroImgPar {
+			0-top {
+				top: 0%;
+			}
+			top-bottom {
+				top: -100%;
+			}
+		}
+
+		#featureCon {
+			-skrollr-animation-name: animFeatPar;
+			-skrollr-anchor-target: #home3;
+		}
+		@-skrollr-keyframes animFeatPar {
+			bottom-top {
+				top: 120px;
+			}
+			top-bottom {
+				top: -120px;
+			}
+		}
+
+		#mockPhone {
+			-skrollr-animation-name: animMockPhone;
+			-skrollr-anchor-target: #home2;
+		}
+		@-skrollr-keyframes animMockPhone {
+			bottom-top {
+				height: 720px; 
+			}
+			top-bottom {
+				height: 480px; 
+			}
+		}
+		
+		#appDesc {
+			-skrollr-animation-name: animAppDesc;
+			-skrollr-anchor-target: #home2;
+		}
+		@-skrollr-keyframes animAppDesc {
+			bottom-top {
+				opacity: 0.24;
+				transform: translateY(-50%);
+			}
+			center-top {
+				opacity: 1;
+			}
+			top-bottom {
+				opacity: 0.24;
+				transform: translateY(50%);
+			}
+		}
+		
+		#carouselCon {
+			-skrollr-animation-name: animCarousel;
+			-skrollr-anchor-target: #home4;
+		}
+		@-skrollr-keyframes animCarousel {
+			bottom-top {
+				transform: translateY(-20%);
+			}
+			top-bottom {
+				transform: translateY(20%);
+			}
+		}
+		
+		#home5 {
+			-skrollr-animation-name: animHome5;
+		}
+		@-skrollr-keyframes animHome5 {
+			bottom-top {
+				background-position: center 0vh;
+			}
+			center-bottom {
+				background-position: center -25vh;
+			}
+		}
+		
+		#appIcon {
+			-skrollr-animation-name: animAppIcon;
+			-skrollr-anchor-target: #home5;
+		}
+		@-skrollr-keyframes animAppIcon {
+			bottom-top {
+				background-size[swing]: 100%;
+				box-shadow[swing]: 0 4px 5px rgba(0,0,0,0.08);
+			}
+			center {
+				background-size: 150%;
+				box-shadow[swing]: 0 16px 24px rgba(0,0,0,0.08);
+			}
+		}
+		
+		#btnCtaDownload {
+			-skrollr-animation-name: animCta;
+		}
+		@-skrollr-keyframes animCta {
+			-100-bottom {
+				width: 48px;
+			}
+			-101-bottom {
+				width: 246px;
+			}
+		}
+	</style>
+	
+</head>
+
+<body id="body">
+
+<main id="main">
+	
+	<nav class="nav-desktop">
+		<div class="nav-desktop-wrap">
+			<a href="" class="nav-logo">
+				<svg class="nav-svg" x="0px" y="0px" viewBox="0 0 48 24">
+					<g>
+						<defs>
+							<clipPath id="clipWink">
+								<path class="pathWink" d="M1.7,13.2c0,0,8.9-8.9,22.3-8.9s22.3,8.9,22.3,8.9v8.9H1.7V13.2z"/>
+							</clipPath>
+						</defs>
+						<path id="pupil" class="logo-pupil animPupil" d="M24,4.3c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9s8.9-4,8.9-8.9S28.9,4.3,24,4.3z M27.7,13.4 c1.1,0.6,1.7,1.7,1.7,2.9c-1,0.6-2.3,0.6-3.4,0c-0.2-0.1-0.3-0.2-0.4-0.3c0,0.2,0,0.4,0,0.5c0,1.2-0.7,2.3-1.7,2.9 c-1-0.6-1.7-1.7-1.7-2.9c0-0.2,0-0.4,0-0.5c-0.1,0.1-0.3,0.2-0.4,0.3c-1.1,0.6-2.4,0.6-3.4,0c0-1.2,0.6-2.3,1.7-2.9 c0.2-0.1,0.3-0.2,0.5-0.2c-0.2-0.1-0.3-0.1-0.5-0.2c-1.1-0.6-1.7-1.7-1.7-2.9c1-0.6,2.3-0.6,3.4,0c0.2,0.1,0.3,0.2,0.4,0.3 c0-0.2,0-0.4,0-0.5c0-1.2,0.7-2.3,1.7-2.9c1,0.6,1.7,1.7,1.7,2.9c0,0.2,0,0.4,0,0.5c0.1-0.1,0.3-0.2,0.4-0.3c1.1-0.6,2.4-0.6,3.4,0 c0,1.2-0.6,2.3-1.7,2.9c-0.2,0.1-0.3,0.2-0.5,0.2C27.4,13.3,27.6,13.3,27.7,13.4z M24,11c1.2,0,2.2,1,2.2,2.2s-1,2.2-2.2,2.2 s-2.2-1-2.2-2.2S22.8,11,24,11z"/>
+					</g>
+					<g>
+						<defs>
+							<clipPath id="clipPupil">
+								<path id="Clip" class="logo-pupil animPupil" d="M24,4.3c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9s8.9-4,8.9-8.9S28.9,4.3,24,4.3z M27.7,13.4
+								c1.1,0.6,1.7,1.7,1.7,2.9c-1,0.6-2.3,0.6-3.4,0c-0.2-0.1-0.3-0.2-0.4-0.3c0,0.2,0,0.4,0,0.5c0,1.2-0.7,2.3-1.7,2.9
+								c-1-0.6-1.7-1.7-1.7-2.9c0-0.2,0-0.4,0-0.5c-0.1,0.1-0.3,0.2-0.4,0.3c-1.1,0.6-2.4,0.6-3.4,0c0-1.2,0.6-2.3,1.7-2.9
+								c0.2-0.1,0.3-0.2,0.5-0.2c-0.2-0.1-0.3-0.1-0.5-0.2c-1.1-0.6-1.7-1.7-1.7-2.9c1-0.6,2.3-0.6,3.4,0c0.2,0.1,0.3,0.2,0.4,0.3
+								c0-0.2,0-0.4,0-0.5c0-1.2,0.7-2.3,1.7-2.9c1,0.6,1.7,1.7,1.7,2.9c0,0.2,0,0.4,0,0.5c0.1-0.1,0.3-0.2,0.4-0.3
+								c1.1-0.6,2.4-0.6,3.4,0c0,1.2-0.6,2.3-1.7,2.9c-0.2,0.1-0.3,0.2-0.5,0.2C27.4,13.3,27.6,13.3,27.7,13.4z M24,11
+								c1.2,0,2.2,1,2.2,2.2s-1,2.2-2.2,2.2s-2.2-1-2.2-2.2S22.8,11,24,11z"/>
+							</clipPath>
+						</defs>
+						<path id="eyelid-shadow" class="logo-shadow animEyelids" d="M1.7,14.2c0,0,8.9-9,22.3-9s22.3,9,22.3,9"/>
+					</g>
+					<path id="eyelid" class="logo-eyelid animEyelids" d="M1.7,13.2c0,0,8.9-9,22.3-9s22.3,9,22.3,9"/>
+				</svg>
+			</a> 
+			<ul class="nav-desktop-links text-subtitle-2 animFadeLeft">
+				<li class="active"><a href="#home" id="linkHome" class="nav-desktop-a">Home</a></li>
+				<li><a href="#about" id="linkAbout" class="nav-desktop-a">About</a></li>
+				<li><a href="#contact" id="linkContact" class="nav-desktop-a">Contact</a></li>
+			</ul>
+			<button class="btn-menu ripple">
+				<svg class="icon-menu" x="0px" y="0px" viewBox="0 0 24 24">
+					<line class="menu-line menu-line-1" x1="3" y1="12" x2="21" y2="12"/>
+					<line class="menu-line menu-line-2" x1="3" y1="12" x2="21" y2="12"/>
+					<line class="menu-line menu-line-3" x1="3" y1="12" x2="21" y2="12"/>
+					<line class="close-line close-line-1" x1="5.6" y1="5.6" x2="18.4" y2="18.4"/>
+					<line class="close-line close-line-2" x1="18.4" y1="5.6" x2="5.6" y2="18.4"/>
+				</svg>
+			</button>
+		</div>
+		<ul class="nav-mobile-links text-subtitle-2">
+			<li class="active"><a href="#home" id="linkHome" class="nav-mobile-a"><span>Home</span></a></li>
+			<li><a href="#about" id="linkAbout" class="nav-mobile-a"><span>About</span></a></li>
+			<li><a href="#contact" id="linkContact" class="nav-mobile-a"><span>Contact</span></a></li>
+		</ul>
+	</nav>
+	<div class="nav-scrim"></div>
+	
+	<div id="home1" class="home-panel-1">
+		<div class="page-wrap-1">
+			<div class="hero-panel">
+				<div class="hero-info animFadeUp" style="animation-delay: 250ms;">
+					<h4 class="light-70">Introducing</h4>
+					<h1 class="light-100">EDGE</h1>
+					<h5 class="dark-54">Mental health care in your pocket</h5>
+					<button id="btnCta1" class="btn-raised text-button accent-100 btn-cta ripple">
+						<img src="src\assets\svg\ic_get_app.svg" height="24px">
+						<span>Download for free</span>
+					</button>
+				</div>
+				<div id="heroImg" class="hero-img animFadeUp" style="animation-delay: 350ms;"></div>
+			</div>
+			<button id="scrollHomeDown" class="ripple-w btn-flat-circle btn-scroll-down animRepeatUpDown">
+				<img class="animRepeatFadeInverse" src="src/assets/svg/ic_chevron_down.svg" height="24px">
+				<img class="animRepeatFade" src="src/assets/svg/ic_mouse.svg" height="24px">
+			</button>
+		</div>
+	</div>
+
+	<div id="home2" class="home-panel-2">
+		<div id="mockPhone" class="mock-phone"></div>
+		<div class="page-wrap-1 home-2-wrap">
+			<h6 id="appDesc" class="app-desc dark-54"><span class="dark-87">Edge</span> is a modernized, mental healthcare application that focuses on assisting users affected by stress, anxiety, and depression.</h6>
+		</div>
+	</div>
+	
+	<div id="home3" class="home-panel-3">
+		<div id="featureCon" class="page-wrap-1 feature-con">
+			<div class="feature-panel">
+				<object class="illus" type="image/svg+xml" data="src\assets\svg\illus-moods.svg"></object>
+				<object class="illus-shadow" type="image/svg+xml" data="src\assets\svg\illus-moods.svg"></object>
+				<h6 class="feature-title dark-87">Moods</h6>
+				<p class="text-body-1 dark-54">You can track how your are feeling throughout the month by just adding your mood everyday.</p>
+			</div>
+			<div class="feature-panel">
+				<object class="illus" type="image/svg+xml" data="src\assets\svg\illus-journals.svg"></object>
+				<object class="illus-shadow" type="image/svg+xml" data="src\assets\svg\illus-journals.svg"></object>
+				<h6 class="feature-title dark-87">Journal</h6>
+				<p class="text-body-1 dark-54">You can log your days, vent on something, or to simply write your experiences for safekeeping.</p>
+			</div>
+			<div class="feature-panel">
+				<object class="illus" type="image/svg+xml" data="src\assets\svg\illus-tasks.svg"></object>
+				<object class="illus-shadow" type="image/svg+xml" data="src\assets\svg\illus-tasks.svg"></object>
+				<h6 class="feature-title dark-87">Tasks</h6>
+				<p class="text-body-1 dark-54">Accomplish various activities to ease yourself from negative emotions and earn coins to unlock minigames.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="home4" class="home-panel-4">
+		<div class="page-wrap-1">
+			<div id="carouselCon" class="carousel-con">
+				<div class="carousel-item-1">
+					<img class="carousel-img" draggable="false" src="src\assets\img\mock-reads.png">
+				</div>
+				<div class="carousel-item-2">
+					<img class="carousel-img" draggable="false" src="src\assets\img\mock-helplines.png">
+				</div>
+				<div class="carousel-item-center">
+					<img class="carousel-img" draggable="false" src="src\assets\img\mock-dashboard.png">
+				</div>
+				<div class="carousel-item-3">
+					<img class="carousel-img" draggable="false" src="src\assets\img\mock-journal.png">
+				</div>
+				<div class="carousel-item-4">
+					<img class="carousel-img" draggable="false" src="src\assets\img\mock-tasks.png">
+				</div>
+				<div class="carousel-control">
+					<button class="btn-raised-ic btn-carousel btn-carousel-left ripple"><img src="src\assets\svg\ic_chevron_left.svg"></button>
+					<object id="phoneBorder" class="carousel-phone-border" type="image/svg+xml" data="src\assets\svg\mock-phone-border.svg"></object>
+					<button class="btn-raised-ic btn-carousel btn-carousel-right ripple"><img src="src\assets\svg\ic_chevron_right.svg"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="home5" class="home-panel-5">
+		<div class="page-wrap-1 download-panel">
+			<div id="appIcon" class="app-icon"></div>
+			<h3 class="light-100">EDGE</h3>
+			<button id="btnCtaDownload" class="btn-raised text-button accent-100 btn-cta ripple">
+				<img src="src\assets\svg\ic_get_app.svg" height="24px">
+				<span>Download for free</span>
+			</button>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="page-wrap-1">
+			<div class="footer-con">
+				<object class="footer-logo" type="image/svg+xml" data="src\assets\svg\logo-helianthus.svg"></object>
+				<div class="divider-ver"></div>
+				<div class="footer-links">
+					<p class="text-overline dark-54">Social media accounts</p>
+					<div class="social-con">
+						<a href="https://www.facebook.com/helianthussoftware" target="_blank">
+							<button class="ripple btn-flat-circle-dark">
+								<img src="src/assets/svg/logo-facebook.svg" height="24px">
+							</button>
+						</a>
+						<a href="https://www.twitter.com/helianthussoftware" target="_blank">
+							<button class="ripple btn-flat-circle-dark">
+								<img src="src/assets/svg/logo-twitter.svg" height="24px">
+							</button>
+						</a>
+						<a href="https://www.instagram.com/helianthussoftware" target="_blank">
+							<button class="ripple btn-flat-circle-dark">
+								<img src="src/assets/svg/logo-instagram.svg" height="24px">
+							</button>
+						</a>
+					</div>
+				</div>
+				<div class="divider-ver"></div>
+				<div class="footer-links">
+					<p class="text-overline dark-54">For feedback and suggestions, email</p>
+					<a href="helianthussoftware@gmail.com" target="_blank">
+						<button class="btn-flat ripple btn-email text-body-2 accent-100">
+							helianthussoftware@gmail.com
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer-2">
+		<div class="page-wrap-1">
+			<p class="text-body-2 dark-54"><span class="dark-87">&copy;Helianthus Software</span> &#124; All Rights Reserved 2019</p>
+		</div>
+	</div>
+	
+	<div class="btn-top-container-hide">
+		<button id="btnTop" class="btn-top ripple-w">
+			<img src="src\assets\svg\ic_arrow_up.svg" height="24px" width="24px">
+			<span class="text-button light-100">Back to top</span>		
+		</button>
+	</div>
+</main>
+	
+	<div class="download-scrim-hide"></div>
+	<div class="download-modal-hide">
+		<button class="btn-close-modal ripple">
+			<img src="src/assets/svg/ic_close.svg">
+		</button>
+		<div class="page-wrap-1 download-parent">
+			<div class="download-con">
+				<h2 class="accent-100">Download Edge</h2>
+				<div class="download-elements">
+					<object class="edge-qr" type="image/svg+xml" data="src\assets\svg\qr-edge.svg"></object>
+					<div class="divider-ver"></div>
+					<a class="playstore-link ripple" href="https://play.google.com/store/apps/details?id=com.helianthus.edge" target="_blank">
+						<img class="playstore-badge" draggable="false" src="src\assets\svg\playstore-badge.svg">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="src\jquery.min.js"></script>
+	<script type="text/javascript" src="src\script.js"></script>
+	<script type="text/javascript" src="src\skrollr.stylesheets.min.js"></script>
+	<script type="text/javascript" src="src\skrollr.min.js"></script>
+	<script type="text/javascript">
+		var s = skrollr.init();
+	</script>
+</body>
+</html>
