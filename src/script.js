@@ -81,7 +81,9 @@ function scrimCloseNav(e) {
 btnMenu.addEventListener("click", toggleMobileNav);
 window.addEventListener("click", scrimCloseNav);
 
-document.getElementById('scrollHomeDown').addEventListener("click", function() {
+var btnScrlDown = document.querySelector('.btn-scroll-down');
+
+btnScrlDown.addEventListener("click", function() {
 	window.setTimeout(function() {
 		location = "#home2";
 	}, 150);
@@ -90,7 +92,8 @@ document.getElementById('scrollHomeDown').addEventListener("click", function() {
 // ====================== BUTTON TO TOP ====================== //
 
 document.getElementById('btnTop').addEventListener("click", function() {
-	location = "#home1";
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
 });
 
 
