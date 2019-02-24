@@ -26,6 +26,23 @@
 				background-color[swing]: rgba(255,255,255,1);
 			}
 		}
+		
+		#aboutCon1 {
+			-skrollr-animation-name: animStatement;
+		}
+		#aboutCon2 {
+			-skrollr-animation-name: animStatement;
+		}
+		@-skrollr-keyframes animStatement {
+			bottom-top {
+				opacity[swing]: 0;
+				transform[swing]: translateY(50%);
+			}
+			center-top {
+				opacity[swing]: 1;
+				transform[swing]: translateY(0);
+			}
+		}
 	</style>
 	
 </head>
@@ -98,11 +115,39 @@
 			</button>
 		</div>
 	</div>
+	
 	<div id="home2" class="about-panel-2">
 		<div class="page-wrap-1">
-			
+			<div id="aboutCon1" class="about-2-con">
+				<div class="about-2-content">
+					<p class="text-overline accent-100">Vision</p>
+					<p class="text-body-1 dark-87">Helianthus Software envisions to be one of the premieres in the fieldd of software industry in the Philippines that provides better understanding in the area of mental wellness.</p>
+				</div>
+				<div class="about-2-content">
+					<p class="text-overline accent-100">Mission</p>
+					<p class="text-body-1 dark-87">We dedicate ourselves in developing mobile applications that raise awareness and help individuals affected by stress, anxiety, and depression because everyone deserves proper care and attention.</p>
+				</div>
+			</div>
+			<div id="aboutCon2" class="about-2-con">
+				<div class="about-2-content">
+					<p class="text-overline accent-100">Goals</p>
+					<p class="text-body-1 dark-87">To raise awareness about the significance of having a healithy mind for the improvement of one&apos;s well-being.
+					</p>
+				</div>
+				<div class="about-2-content">
+					<p class="text-overline accent-100">Objective</p>
+					<p class="text-body-1 dark-87">To provide useful ideas and information about mental health through mobile applications that are informative and entertaining.</p>
+				</div>
+			</div>
 		</div>
 	</div>
+	
+	<div class="about-panel-3">
+		<div >
+		
+		</div>
+	</div>
+	
 	<div class="footer">
 		<div class="page-wrap-1">
 			<div class="footer-con">
