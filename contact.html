@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="HandheldFriendly" content="true"> -->
+
+	<link rel="icon" type="image/png" href="src\assets\icon\ic_helianthus-green_0.5x.png">
+	<link rel="stylesheet" type="text/css" href="src\reset.min.css">
+	<link rel="stylesheet" type="text/css" href="src\style.css">
+	<link rel="stylesheet" type="text/css" href="src\ripple.css">
+	
+	<style>		
+		#about1 {
+			-skrollr-animation-name: animHeroBgPar;
+		}
+		@-skrollr-keyframes animHeroBgPar {
+			top {
+				background-position: center 50%;
+				background-color[swing]: rgba(189,189,189 ,1);
+			}
+			top-bottom {
+				background-position: center 100%;
+				background-color[swing]: rgba(255,255,255,1);
+			}
+		}
+		
+		#aboutCon1 {
+			-skrollr-animation-name: animStatement;
+		}
+		#aboutCon2 {
+			-skrollr-animation-name: animStatement;
+		}
+		@-skrollr-keyframes animStatement {
+			bottom-top {
+				opacity[swing]: 0;
+				transform[swing]: translateY(50%);
+			}
+			center-top {
+				opacity[swing]: 1;
+				transform[swing]: translateY(0);
+			}
+		}
+	</style>
+	
+</head>
+
+<body id="body">
+	
+	<nav class="nav-desktop">
+		<div class="nav-desktop-wrap">
+			<a href="index.html" class="nav-logo">
+				<svg class="nav-svg" x="0px" y="0px" viewBox="0 0 48 24">
+					<g>
+						<defs>
+							<clipPath id="clipWink">
+								<path class="pathWink" d="M1.7,13.2c0,0,8.9-8.9,22.3-8.9s22.3,8.9,22.3,8.9v8.9H1.7V13.2z"/>
+							</clipPath>
+						</defs>
+						<path id="pupil" class="logo-pupil animPupil" d="M24,4.3c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9s8.9-4,8.9-8.9S28.9,4.3,24,4.3z M27.7,13.4 c1.1,0.6,1.7,1.7,1.7,2.9c-1,0.6-2.3,0.6-3.4,0c-0.2-0.1-0.3-0.2-0.4-0.3c0,0.2,0,0.4,0,0.5c0,1.2-0.7,2.3-1.7,2.9 c-1-0.6-1.7-1.7-1.7-2.9c0-0.2,0-0.4,0-0.5c-0.1,0.1-0.3,0.2-0.4,0.3c-1.1,0.6-2.4,0.6-3.4,0c0-1.2,0.6-2.3,1.7-2.9 c0.2-0.1,0.3-0.2,0.5-0.2c-0.2-0.1-0.3-0.1-0.5-0.2c-1.1-0.6-1.7-1.7-1.7-2.9c1-0.6,2.3-0.6,3.4,0c0.2,0.1,0.3,0.2,0.4,0.3 c0-0.2,0-0.4,0-0.5c0-1.2,0.7-2.3,1.7-2.9c1,0.6,1.7,1.7,1.7,2.9c0,0.2,0,0.4,0,0.5c0.1-0.1,0.3-0.2,0.4-0.3c1.1-0.6,2.4-0.6,3.4,0 c0,1.2-0.6,2.3-1.7,2.9c-0.2,0.1-0.3,0.2-0.5,0.2C27.4,13.3,27.6,13.3,27.7,13.4z M24,11c1.2,0,2.2,1,2.2,2.2s-1,2.2-2.2,2.2 s-2.2-1-2.2-2.2S22.8,11,24,11z"/>
+					</g>
+					<g>
+						<defs>
+							<clipPath id="clipPupil">
+								<path id="Clip" class="logo-pupil animPupil" d="M24,4.3c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9s8.9-4,8.9-8.9S28.9,4.3,24,4.3z M27.7,13.4
+								c1.1,0.6,1.7,1.7,1.7,2.9c-1,0.6-2.3,0.6-3.4,0c-0.2-0.1-0.3-0.2-0.4-0.3c0,0.2,0,0.4,0,0.5c0,1.2-0.7,2.3-1.7,2.9
+								c-1-0.6-1.7-1.7-1.7-2.9c0-0.2,0-0.4,0-0.5c-0.1,0.1-0.3,0.2-0.4,0.3c-1.1,0.6-2.4,0.6-3.4,0c0-1.2,0.6-2.3,1.7-2.9
+								c0.2-0.1,0.3-0.2,0.5-0.2c-0.2-0.1-0.3-0.1-0.5-0.2c-1.1-0.6-1.7-1.7-1.7-2.9c1-0.6,2.3-0.6,3.4,0c0.2,0.1,0.3,0.2,0.4,0.3
+								c0-0.2,0-0.4,0-0.5c0-1.2,0.7-2.3,1.7-2.9c1,0.6,1.7,1.7,1.7,2.9c0,0.2,0,0.4,0,0.5c0.1-0.1,0.3-0.2,0.4-0.3
+								c1.1-0.6,2.4-0.6,3.4,0c0,1.2-0.6,2.3-1.7,2.9c-0.2,0.1-0.3,0.2-0.5,0.2C27.4,13.3,27.6,13.3,27.7,13.4z M24,11
+								c1.2,0,2.2,1,2.2,2.2s-1,2.2-2.2,2.2s-2.2-1-2.2-2.2S22.8,11,24,11z"/>
+							</clipPath>
+						</defs>
+						<path id="eyelid-shadow" class="logo-shadow animEyelids" d="M1.7,14.2c0,0,8.9-9,22.3-9s22.3,9,22.3,9"/>
+					</g>
+					<path id="eyelid" class="logo-eyelid animEyelids" d="M1.7,13.2c0,0,8.9-9,22.3-9s22.3,9,22.3,9"/>
+				</svg>
+			</a> 
+			<ul class="nav-desktop-links text-subtitle-2 animFadeLeft">
+				<li><a href="index.html" id="linkHome" class="nav-desktop-a">Home</a></li>
+				<li class="active"><a href="about.html" id="linkAbout" class="nav-desktop-a">About</a></li>
+				<li><a href="contact.html" id="linkContact" class="nav-desktop-a">Contact</a></li>
+			</ul>
+			<button class="btn-menu ripple">
+				<svg class="icon-menu" x="0px" y="0px" viewBox="0 0 24 24">
+					<line class="menu-line menu-line-1" x1="3" y1="12" x2="21" y2="12"/>
+					<line class="menu-line menu-line-2" x1="3" y1="12" x2="21" y2="12"/>
+					<line class="menu-line menu-line-3" x1="3" y1="12" x2="21" y2="12"/>
+					<line class="close-line close-line-1" x1="5.6" y1="5.6" x2="18.4" y2="18.4"/>
+					<line class="close-line close-line-2" x1="18.4" y1="5.6" x2="5.6" y2="18.4"/>
+				</svg>
+			</button>
+		</div>
+		<ul class="nav-mobile-links text-subtitle-2">
+			<li><a href="index.html" id="linkHome" class="nav-mobile-a"><span>Home</span></a></li>
+			<li class="active"><a href="about.html" id="linkAbout" class="nav-mobile-a"><span>About</span></a></li>
+			<li><a href="contact.html" id="linkContact" class="nav-mobile-a"><span>Contact</span></a></li>
+		</ul>
+	</nav>
+	<div class="nav-scrim"></div>
+
+<main id="skrollr-body">	
+	<div id="about1" class="about-panel-1">
+		<div class="page-wrap-1">
+			<div class="hero-panel">
+				<div class="hero-info animFadeUp" style="animation-delay: 250ms;">
+					<h2 class="light-100">Where information meets innovation.</h2>
+				</div>
+			</div>			
+			<button id="scrollHomeDown" class="ripple-w btn-flat-circle btn-scroll-down animRepeatUpDown">
+				<img class="animRepeatFadeInverse" src="src/assets/svg/ic_chevron_down.svg" height="24px">
+				<img class="animRepeatFade" src="src/assets/svg/ic_mouse.svg" height="24px">
+			</button>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="page-wrap-1">
+			<div class="footer-con">
+				<object class="footer-logo" type="image/svg+xml" data="src\assets\svg\logo-helianthus.svg"></object>
+				<div class="divider-ver"></div>
+				<div class="footer-links">
+					<p class="text-overline dark-54">Social media accounts</p>
+					<div class="social-con">
+						<a href="https://www.facebook.com/helianthussoftware" target="_blank">
+							<button class="ripple btn-flat-circle-dark">
+								<img src="src/assets/svg/logo-facebook.svg" height="24px">
+							</button>
+						</a>
+						<a href="https://www.twitter.com/helianthussoftware" target="_blank">
+							<button class="ripple btn-flat-circle-dark">
+								<img src="src/assets/svg/logo-twitter.svg" height="24px">
+							</button>
+						</a>
+						<a href="https://www.instagram.com/helianthussoftware" target="_blank">
+							<button class="ripple btn-flat-circle-dark">
+								<img src="src/assets/svg/logo-instagram.svg" height="24px">
+							</button>
+						</a>
+					</div>
+				</div>
+				<div class="divider-ver"></div>
+				<div class="footer-links">
+					<p class="text-overline dark-54">For feedback and suggestions, email</p>
+					<a href="mailto: helianthussoftware@gmail.com" target="_blank">
+						<button class="btn-flat ripple btn-email text-body-2 accent-100">
+							helianthussoftware@gmail.com
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer-2">
+		<div class="page-wrap-1">
+			<p class="text-body-2 dark-54"><span class="dark-87">&copy;Helianthus Software</span> &#124; All Rights Reserved 2019</p>
+		</div>
+	</div>
+	
+	<div class="btn-top-container-hide">
+		<button id="btnTop" class="btn-top ripple-w">
+			<img src="src\assets\svg\ic_arrow_up.svg" height="24px" width="24px">
+			<span class="text-button light-100">Back to top</span>		
+		</button>
+	</div>
+</main>
+
+	<script type="text/javascript" src="src\jquery.min.js"></script>
+	<script type="text/javascript" src="src\script.js"></script>
+	<script type="text/javascript" src="src\skrollr.stylesheets.min.js"></script>
+	<script type="text/javascript" src="src\skrollr.min.js"></script>
+	<script type="text/javascript">
+		var s = skrollr.init({forceHeight: false});
+	</script>
+</body>
+</html>
