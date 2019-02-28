@@ -13,7 +13,7 @@ var btnTop = document.querySelector('.btn-top-container-hide');
 var body = document.getElementById('body');
 
 window.addEventListener('scroll', function() {
-	
+
 	if (window.pageYOffset > 56) {
 		console.log("nav-shrink");
 		nav.classList = 'nav-desktop-shrink';
@@ -102,8 +102,8 @@ document.getElementById('btnTop').addEventListener("click", function() {
 var btnCarLeft = document.querySelector('.btn-carousel-left');
 var btnCarRight = document.querySelector('.btn-carousel-right');
 
-function carouselToLeft() {	
-	
+function carouselToLeft() {
+
 	var carousel1 = document.querySelector('.carousel-item-1');
 	var carousel2 = document.querySelector('.carousel-item-2');
 	var carouselC = document.querySelector('.carousel-item-center');
@@ -115,9 +115,9 @@ function carouselToLeft() {
 	carouselC.classList = 'carousel-item-3';
 	carousel3.classList = 'carousel-item-4';
 	carousel4.classList = 'carousel-item-1';
-	
+
 	btnCarLeft.removeEventListener('click', carouselToLeft);
-	
+
 	window.setTimeout(function() {
 		btnCarLeft.addEventListener('click', carouselToLeft);
 	}, 500);
@@ -125,7 +125,7 @@ function carouselToLeft() {
 }
 
 function carouselToRight() {
-	
+
 	var carousel1 = document.querySelector('.carousel-item-1');
 	var carousel2 = document.querySelector('.carousel-item-2');
 	var carouselC = document.querySelector('.carousel-item-center');
@@ -137,9 +137,9 @@ function carouselToRight() {
 	carouselC.classList = 'carousel-item-2';
 	carousel3.classList = 'carousel-item-center';
 	carousel4.classList = 'carousel-item-3';
-	
+
 	btnCarRight.removeEventListener('click', carouselToRight);
-	
+
 	window.setTimeout(function() {
 		btnCarRight.addEventListener('click', carouselToRight);
 	}, 500);
@@ -147,7 +147,6 @@ function carouselToRight() {
 }
 
 btnCarLeft.addEventListener('click', carouselToLeft);
-btnCarRight.addEventListener('click', carouselToRight);
 btnCarRight.addEventListener('click', carouselToRight);
 
 // ====================== DOWNLOAD MODAL ====================== //
