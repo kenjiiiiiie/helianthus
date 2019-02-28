@@ -1007,6 +1007,7 @@ button {
 	background-size: cover;
 	background-blend-mode: multiply;
 	padding: 48px;
+	padding-right: 30%;
 	display: flex;
 	align-items: flex-end;
 }
@@ -1030,6 +1031,18 @@ button {
 	padding: 64px 0;
 	width: 100%;
 	height: auto;
+}
+
+.about-org-text {
+	position: relative;
+}
+
+.about-org-text > h4 {
+	margin-bottom: 8px;
+}
+
+.about-org-chart {
+	position: relative;
 }
 
 /* ==================== FOOTER ==================== */
