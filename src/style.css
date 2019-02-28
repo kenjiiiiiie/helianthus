@@ -994,6 +994,8 @@ button {
 
 .about-panel-3 {
 	padding-bottom: 64px;
+	width: 100%;
+	height: auto;
 }
 
 .about-hero-img-3 {
@@ -1013,10 +1015,21 @@ button {
 	position: relative;
 	width: 100%;
 	height: auto;
+	padding-top: 64px;
 }
 
 .about-gen-info > h4 {
 	margin-bottom: 16px;
+}
+
+.about-gen-info > p {
+	margin-top: 16px;
+}
+
+.about-panel-4 {
+	padding: 64px 0;
+	width: 100%;
+	height: auto;
 }
 
 /* ==================== FOOTER ==================== */
