@@ -33,6 +33,9 @@
 		#aboutCon2 {
 			-skrollr-animation-name: animStatement;
 		}
+		#aboutGenInfo {
+			-skrollr-animation-name: animStatement;
+		}
 		@-skrollr-keyframes animStatement {
 			bottom-top {
 				opacity[swing]: 0;
@@ -41,6 +44,24 @@
 			center-top {
 				opacity[swing]: 1;
 				transform[swing]: translateY(0);
+			}
+		}
+
+		#aboutHeroImg3 {
+			-skrollr-animation-name: animHeroBgPar3;
+		}
+		@-skrollr-keyframes animHeroBgPar3 {
+			bottom-top {
+				background-position: center 100%;
+			}
+			180-bottom {
+				background-color: rgba(255,255,255,1);
+			}
+			bottom {
+				background-color: rgba(158,158,158,1);
+			}
+			top-bottom {
+				background-position: center -50%;
 			}
 		}
 	</style>
@@ -121,7 +142,7 @@
 			<div id="aboutCon1" class="about-2-con">
 				<div class="about-2-content">
 					<p class="text-overline accent-100">Vision</p>
-					<p class="text-body-1 dark-87">Helianthus Software envisions to be one of the premieres in the field of software industry in the Philippines that provides better understanding in the area of mental wellness.</p>
+					<p class="text-body-1 dark-87"><b>Helianthus Software</b> envisions to be one of the premieres in the field of software industry in the Philippines that provides better understanding in the area of mental wellness.</p>
 				</div>
 				<div class="about-2-content">
 					<p class="text-overline accent-100">Mission</p>
@@ -144,11 +165,13 @@
 
 	<div class="about-panel-3">
 		<div class="page-wrap-1">
-			<div class="about-gen-info">
-				<h4 class="accent-100">What we are</h4>
-				<p class="text-body-1 dark-87">
-					Helianthus Software is a company which offers new and innovative solutions to many of society’s problems. We offer educational and interactional mobile applications that will help spread awareness towards our users. The company started to form as a small group of aspiring inventors who aim to seize the opportunity to solve society’s problem.
-				</p>
+			<div id="aboutHeroImg3" class="about-hero-img-3">
+				<div id="aboutGenInfo" class="about-gen-info">
+					<h4 class="accent-100">What we are</h4>
+					<p class="text-body-1 light-100">
+						Helianthus Software is a company which offers new and innovative solutions to many of society’s problems. We offer educational and interactional mobile applications that will help spread awareness towards our users. The company started to form as a small group of aspiring inventors who aim to seize the opportunity to solve society’s problem.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -992,8 +992,31 @@ button {
 	margin-bottom: 16px;
 }
 
-.about-gen-info > h4 > span {
-	font-weight: 900;
+.about-panel-3 {
+	padding-bottom: 64px;
+}
+
+.about-hero-img-3 {
+	position: relative;
+	width: 100%;
+	height: 480px;
+	background-image: url(assets/img/img_developers.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	padding: 48px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.about-gen-info {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.about-gen-info > h4 {
+	margin-bottom: 16px;
 }
 
 /* ==================== FOOTER ==================== */
