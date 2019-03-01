@@ -443,7 +443,7 @@ button {
 	clip-path: url(#clipWink);
 	opacity: 0;
 	transform: scale(0.9) rotate(-15deg);
-	transform-origin: 50% 50%;
+	transform-origin: center;
 	transition: 150ms cubic-bezier(1,0,0,1);
 }
 
@@ -500,7 +500,7 @@ button {
 	border-radius: 4px;
 	border-bottom: solid 6px rgba(0,230,118,0.42);
 	transform: translateY(8px) scaleX(0);
-	transform-origin: 50% 100%;
+	transform-origin: center;
 	transition: 100ms cubic-bezier(1,0,0,1);
 }
 
@@ -1035,6 +1035,7 @@ button {
 
 .about-org-text {
 	position: relative;
+	margin-bottom: 24px;
 }
 
 .about-org-text > h4 {
@@ -1043,6 +1044,51 @@ button {
 
 .about-org-chart {
 	position: relative;
+}
+
+.about-logo-con {
+	width: 192px;
+	margin: 0 auto;
+}
+
+.about-logo-eyelid {
+	stroke: rgba(0,200,83,1);
+	stroke-width: 4.8;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 50;
+	fill: none;
+}
+
+.about-logo-shadow {
+	stroke: rgba(0,0,0,0.16);
+	stroke-width: 4.8;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 50;
+	clip-path: url(#aboutClipPupil);
+	fill: none;
+}
+
+.about-logo-pupil {
+	fill: rgba(0,200,83,1);
+	transform-origin: center;
+}
+
+.about-line-v {
+	position: relative;
+	width: 2px;
+	height: 96px;
+	background: rgba(0,0,0,0.12);
+	margin: 0 auto;
+	transform-origin: top;
+}
+
+.about-chart-ppl {
+	position: relative;
+	width: 192px;
+	height: auto;
+	background: rgba(238,238,238,1);
+	margin: 8px auto;
+	transform-origin: center;
 }
 
 /* ==================== FOOTER ==================== */

@@ -57,6 +57,48 @@
 				background-position: center -50%;
 			}
 		}
+
+		#aboutEyelid, #aboutShadow {
+			-skrollr-animation-name: animAboutEyelid;
+			-skrollr-anchor-target: #aboutLogo;
+		}
+		@-skrollr-keyframes animAboutEyelid {
+			bottom {
+				opacity[swing]: 0;
+				stroke-dashoffset[swing]: 50;
+			}
+			center-top {
+				opacity[swing]: 1;
+				stroke-dashoffset[swing]: 0;
+			}
+		}
+
+		#aboutPupil {
+			-skrollr-animation-name: animAboutPupil;
+			-skrollr-anchor-target: #aboutLogo;
+		}
+		@-skrollr-keyframes animAboutPupil {
+			bottom {
+				opacity[swing]: 0;
+				transform: scale(0.9) rotate(-15deg);
+			}
+			center-top {
+				opacity[swing]: 1;
+				transform: scale(1) rotate(0deg);
+			}
+		}
+
+		#abtLine1 {
+			-skrollr-animation-name: animAboutLineV;
+		}
+		@-skrollr-keyframes animAboutLineV {
+			center-top {
+				transform: scaleY(0);
+			}
+			center-bottom {
+				transform: scaleY(1);
+			}
+		}
 	</style>
 
 </head>
@@ -165,7 +207,7 @@
 						Helianthus Software, a company which started out as a small group of young aspiring inventors, focuses on spreading awareness through the use of technology.
 					</p>
 					<p class="text-body-1 light-100">
-						We plan to contribute to the society by educating the public about certain issues and how it affects people's lives. With the help of our educational and interactive mobile applications, not only will we able to inform users about such issues, but also provide support and assistance to them. Helianthus Software firmly believes that modern technology can be used to educate and improve the lives of many.
+						We plan to contribute to the society by educating the public about certain issues and how it affects people's lives. With the help of our educational and interactive mobile applications, not only we will be able to inform users about such issues, but also provide support and assistance to them. Helianthus Software firmly believes that modern technology can be used to educate and improve the lives of many.
 					</p>
 				</div>
 			</div>
@@ -181,7 +223,32 @@
 				</p>
 			</div>
 			<div class="about-org-chart">
-
+				<div id="aboutLogoCon" class="about-logo-con">
+					<svg id="aboutLogo" class="about-logo" x="0px" y="0px" viewBox="0 0 48 24">
+						<g>
+							<path id="aboutPupil" class="about-logo-pupil" d="M24,4.3c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9s8.9-4,8.9-8.9S28.9,4.3,24,4.3z M27.7,13.4 c1.1,0.6,1.7,1.7,1.7,2.9c-1,0.6-2.3,0.6-3.4,0c-0.2-0.1-0.3-0.2-0.4-0.3c0,0.2,0,0.4,0,0.5c0,1.2-0.7,2.3-1.7,2.9 c-1-0.6-1.7-1.7-1.7-2.9c0-0.2,0-0.4,0-0.5c-0.1,0.1-0.3,0.2-0.4,0.3c-1.1,0.6-2.4,0.6-3.4,0c0-1.2,0.6-2.3,1.7-2.9 c0.2-0.1,0.3-0.2,0.5-0.2c-0.2-0.1-0.3-0.1-0.5-0.2c-1.1-0.6-1.7-1.7-1.7-2.9c1-0.6,2.3-0.6,3.4,0c0.2,0.1,0.3,0.2,0.4,0.3 c0-0.2,0-0.4,0-0.5c0-1.2,0.7-2.3,1.7-2.9c1,0.6,1.7,1.7,1.7,2.9c0,0.2,0,0.4,0,0.5c0.1-0.1,0.3-0.2,0.4-0.3c1.1-0.6,2.4-0.6,3.4,0 c0,1.2-0.6,2.3-1.7,2.9c-0.2,0.1-0.3,0.2-0.5,0.2C27.4,13.3,27.6,13.3,27.7,13.4z M24,11c1.2,0,2.2,1,2.2,2.2s-1,2.2-2.2,2.2 s-2.2-1-2.2-2.2S22.8,11,24,11z"/>
+						</g>
+						<g>
+							<defs>
+								<clipPath id="aboutClipPupil">
+									<path id="Clip" class="about-logo-pupil" d="M24,4.3c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9s8.9-4,8.9-8.9S28.9,4.3,24,4.3z M27.7,13.4
+									c1.1,0.6,1.7,1.7,1.7,2.9c-1,0.6-2.3,0.6-3.4,0c-0.2-0.1-0.3-0.2-0.4-0.3c0,0.2,0,0.4,0,0.5c0,1.2-0.7,2.3-1.7,2.9
+									c-1-0.6-1.7-1.7-1.7-2.9c0-0.2,0-0.4,0-0.5c-0.1,0.1-0.3,0.2-0.4,0.3c-1.1,0.6-2.4,0.6-3.4,0c0-1.2,0.6-2.3,1.7-2.9
+									c0.2-0.1,0.3-0.2,0.5-0.2c-0.2-0.1-0.3-0.1-0.5-0.2c-1.1-0.6-1.7-1.7-1.7-2.9c1-0.6,2.3-0.6,3.4,0c0.2,0.1,0.3,0.2,0.4,0.3
+									c0-0.2,0-0.4,0-0.5c0-1.2,0.7-2.3,1.7-2.9c1,0.6,1.7,1.7,1.7,2.9c0,0.2,0,0.4,0,0.5c0.1-0.1,0.3-0.2,0.4-0.3
+									c1.1-0.6,2.4-0.6,3.4,0c0,1.2-0.6,2.3-1.7,2.9c-0.2,0.1-0.3,0.2-0.5,0.2C27.4,13.3,27.6,13.3,27.7,13.4z M24,11
+									c1.2,0,2.2,1,2.2,2.2s-1,2.2-2.2,2.2s-2.2-1-2.2-2.2S22.8,11,24,11z"/>
+								</clipPath>
+							</defs>
+							<path id="aboutShadow" class="about-logo-shadow" d="M1.7,14.2c0,0,8.9-9,22.3-9s22.3,9,22.3,9"/>
+						</g>
+						<path id="aboutEyelid" class="about-logo-eyelid" d="M1.7,13.2c0,0,8.9-9,22.3-9s22.3,9,22.3,9"/>
+					</svg>
+				</div>
+				<div id="abtLine1" class="about-line-v"></div>
+				<div class="about-chart-ppl">
+					<div></div>
+				</div>
 			</div>
 		</div>
 	</div>
