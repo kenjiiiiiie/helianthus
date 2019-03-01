@@ -1075,20 +1075,125 @@ button {
 
 .about-line-v {
 	position: relative;
-	width: 2px;
-	height: 96px;
+	width: 4px;
+	height: 64px;
 	background: rgba(0,0,0,0.12);
 	margin: 0 auto;
 	transform-origin: top;
 }
 
+.about-line-vs {
+	position: relative;
+	width: 2px;
+	height: 48px;
+	background: rgba(0,0,0,0.12);
+	margin: 0 auto;
+	transform-origin: top;
+}
+
+.about-line-h {
+	position: relative;
+	width: calc(100% - (100% / 3) + 5px);
+	height: 4px;
+	background: rgba(0,0,0,0.12);
+	margin: 0 auto;
+	transform: scaleX(0);
+	transform-origin: top center;
+}
+
+.about-chart-lv2-con {
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: flex-start;
+}
+
 .about-chart-ppl {
 	position: relative;
-	width: 192px;
+	width: calc(100% / 3);
 	height: auto;
-	background: rgba(238,238,238,1);
-	margin: 8px auto;
+	margin: 0 auto;
 	transform-origin: center;
+}
+
+.about-dept {
+	margin: 8px auto;
+	text-align: center;
+}
+
+.about-chart-img {
+	position: relative;
+	width: 144px;
+	height: 144px;
+	background-color: rgba(0,230,118,1);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 8px auto 8px auto;
+	border-radius: 50%;
+}
+
+.about-chart-text {
+	margin-bottom: 8px;
+}
+
+.about-chart-text > h5 {
+	text-align: center;
+	font-weight: 800;
+}
+
+.about-chart-text > h6 {
+	text-align: center;
+	font-weight: 700;
+}
+
+.about-chart-text > p {
+	text-align: center;
+}
+
+.about-img-charles {
+	background-image: url(assets/img/charles.jpg);
+}
+
+.about-img-angelo {
+	background-image: url(assets/img/angelo.jpg);
+}
+
+.about-img-ken {
+	background-image: url(assets/img/ken.jpg);
+}
+
+.about-img-lou {
+	background-image: url(assets/img/lou.jpg);
+}
+
+.about-img-andrea {
+	background-image: url(assets/img/andrea.jpg);
+}
+
+.about-img-marian {
+	background-image: url(assets/img/marian.jpg);
+}
+
+.about-img-dianne {
+	background-image: url(assets/img/dianne.jpg);
+}
+
+.about-img-nalyn {
+	background-image: url(assets/img/nalyn.jpg);
+}
+
+.about-img-angel {
+	background-image: url(assets/img/angel.jpg);
+}
+
+.about-img-geo {
+	background-image: url(assets/img/geo.jpg);
+}
+
+.about-img-raph {
+	background-image: url(assets/img/raph.jpg);
 }
 
 /* ==================== FOOTER ==================== */

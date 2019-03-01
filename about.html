@@ -93,12 +93,67 @@
 		}
 		@-skrollr-keyframes animAboutLineV {
 			center-top {
-				transform: scaleY(0);
+				transform[swing]: scaleY(0);
 			}
 			center-bottom {
-				transform: scaleY(1);
+				transform[swing]: scaleY(1);
 			}
 		}
+
+		#abtLine2 {
+			-skrollr-animation-name: animAboutLineH;
+		}
+		@-skrollr-keyframes animAboutLineH {
+			20-center {
+				transform[swing]: scaleX(0);
+			}
+			center-bottom {
+				transform[swing]: scaleX(1);
+			}
+		}
+
+		#aboutImg {
+			-skrollr-animation-name: animAboutImg;
+		}
+		@-skrollr-keyframes animAboutImg {
+			center-top {
+				transform[swing]: scale(0.9);
+				opacity[swing]: 0;
+				background-size[swing]: 100%;
+			}
+			center {
+				transform[swing]: scale(1);
+				opacity[swing]: 1;
+				background-size[swing]: 120%;
+			}
+		}
+		#aboutText {
+			-skrollr-animation-name: animAboutText;
+		}
+		@-skrollr-keyframes animAboutText {
+			150-center {
+				transform[swing]: translateY(12px);
+				opacity[swing]: 0;
+			}
+			100-center {
+				transform[swing]: translateY(0%);
+				opacity[swing]: 1;
+			}
+		}
+		#aboutDept {
+			-skrollr-animation-name: animAboutDept;
+		}
+		@-skrollr-keyframes animAboutDept {
+			center-top {
+				transform[swing]: translateY(12px);
+				opacity[swing]: 0;
+			}
+			center-bottom {
+				transform[swing]: translateY(0%);
+				opacity[swing]: 1;
+			}
+		}
+
 	</style>
 
 </head>
@@ -247,7 +302,80 @@
 				</div>
 				<div id="abtLine1" class="about-line-v"></div>
 				<div class="about-chart-ppl">
-					<div></div>
+					<div id="aboutImg" class="about-chart-img about-img-charles"></div>
+					<div id="aboutText" class="about-chart-text">
+						<h5 class="dark-87">Charles Berches</h5>
+						<p class="text-body-2 dark-54">Chief Executive Officer</p>
+					</div>
+				</div>
+				<div id="abtLine1" class="about-line-v"></div>
+				<div class="about-chart-ppl">
+					<div id="aboutImg" class="about-chart-img about-img-angelo"></div>
+					<div id="aboutText" class="about-chart-text">
+						<h5 class="dark-87">Angelo Buenaventura</h5>
+						<p class="text-body-2 dark-54">Chief Operating Officer</p>
+					</div>
+				</div>
+				<div id="abtLine1" class="about-line-v"></div>
+				<div id="abtLine2" class="about-line-h"></div>
+				<div class="about-chart-lv2-con">
+					<div class="about-chart-ppl">
+						<div id="abtLine1" class="about-line-v"></div>
+						<p id="aboutDept" class="about-dept text-body-1 dark-87">Marketing Department</p>
+						<div id="aboutImg" class="about-chart-img about-img-ken"></div>
+						<div id="aboutText" class="about-chart-text">
+							<h5 class="dark-87">Kenneth Rodriguez</h5>
+							<p class="text-body-2 dark-54">Marketing Department Head</p>
+						</div>
+						<div id="abtLine1" class="about-line-vs"></div>
+						<div id="aboutImg" class="about-chart-img about-img-lou"></div>
+						<div id="aboutText" class="about-chart-text">
+							<h6 class="dark-87">Louie Malolos</h6>
+						</div>
+						<div id="abtLine1" class="about-line-vs"></div>
+						<div id="aboutImg" class="about-chart-img about-img-andrea"></div>
+						<div id="aboutText" class="about-chart-text">
+							<h6 class="dark-87">Andrea Relaniza</h6>
+						</div>
+						<div id="abtLine1" class="about-line-vs"></div>
+						<div id="aboutImg" class="about-chart-img about-img-marian"></div>
+						<div id="aboutText" class="about-chart-text">
+							<h6 class="dark-87">Marian Tejada</h6>
+						</div>
+					</div>
+					<div class="about-chart-ppl">
+						<div id="abtLine1" class="about-line-v"></div>
+						<p id="aboutDept" class="about-dept text-body-1 dark-87">Finance Department</p>
+						<div id="aboutImg" class="about-chart-img about-img-dianne"></div>
+						<div id="aboutText" class="about-chart-text">
+							<h5 class="dark-87">Dianne Salazar</h5>
+							<p class="text-body-2 dark-54">Finance Department Head</p>
+						</div>
+						<div id="abtLine1" class="about-line-vs"></div>
+						<div id="aboutImg" class="about-chart-img about-img-nalyn"></div>
+						<div id="aboutText" class="about-chart-text">
+							<h6 class="dark-87">Nalyn Chavez</h6>
+						</div>
+						<div id="abtLine1" class="about-line-vs"></div>
+						<div id="aboutImg" class="about-chart-img about-img-angel"></div>
+						<div id="aboutText" class="about-chart-text">
+							<h6 class="dark-87">Angelica Corbeta</h6>
+						</div>
+					</div>
+					<div class="about-chart-ppl">
+						<div id="abtLine1" class="about-line-v"></div>
+						<p id="aboutDept" class="about-dept text-body-1 dark-87">IT Department</p>
+						<div id="aboutImg" class="about-chart-img about-img-geo"></div>
+						<div id="aboutText" class="about-chart-text">
+							<h5 class="dark-87">Geovenal Bernardo</h5>
+							<p class="text-body-2 dark-54">IT Department Head</p>
+						</div>
+						<div id="abtLine1" class="about-line-vs"></div>
+						<div id="aboutImg" class="about-chart-img about-img-raph"></div>
+						<div id="aboutText" class="about-chart-text">
+							<h6 class="dark-87">Raphael Calaranan</h6>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
