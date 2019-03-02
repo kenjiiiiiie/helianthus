@@ -1196,6 +1196,19 @@ button {
 	background-image: url(assets/img/raph.jpg);
 }
 
+/* ==================== CONTACT ==================== */
+
+.contact-panel-1 {
+	width: 100%;
+	height: 100vh;
+	max-height: 1024px;
+	background-image: url(assets/img/helianthus_building.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-blend-mode: multiply;
+	z-index: 3;
+}
+
 /* ==================== FOOTER ==================== */
 
 .footer {
