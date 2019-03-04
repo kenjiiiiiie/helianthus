@@ -21,7 +21,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(250,250,250,1);
 	font-family: 'Metropolis', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -993,6 +993,7 @@ button {
 }
 
 .about-panel-3 {
+	background: rgba(255,255,255,1);
 	padding-bottom: 64px;
 	width: 100%;
 	height: auto;
@@ -1028,6 +1029,7 @@ button {
 }
 
 .about-panel-4 {
+	background: rgba(255,255,255,1);
 	padding: 64px 0;
 	width: 100%;
 	height: auto;
@@ -1200,8 +1202,8 @@ button {
 
 .contact-panel-1 {
 	width: 100%;
-	height: 100vh;
-	max-height: 1024px;
+	height: 75vh;
+	max-height: 720px;
 	background-image: url(assets/img/helianthus_building.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -1209,9 +1211,27 @@ button {
 	z-index: 3;
 }
 
+.contact-sub {
+	margin-top: 16px;
+}
+
+.contact-sub > span {
+	vertical-align: bottom;
+}
+
+.ic-heart {
+	background-image: url('assets/svg/ic_heart.svg');
+	height: 24px;
+	width: 24px;
+	display: inline-block;
+	filter: invert(100%);
+	opacity: 0.7;
+}
+
 /* ==================== FOOTER ==================== */
 
 .footer {
+	background: rgba(255,255,255,1);
 	width: 100%;
 	height: 240px;
 	padding: 48px 0;
