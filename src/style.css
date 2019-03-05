@@ -1230,7 +1230,7 @@ button {
 
 .contact-panel-2 {
 	position: relative;
-	background: rgba(250,250,250,1);
+	background: rgba(255,255,255,1);
 	padding-bottom: 64px;
 }
 
@@ -1244,16 +1244,29 @@ button {
 	background: rgba(255,255,255,1);
 	width: calc(100% / 2 - 24px);
 	height: 240px;
-	padding: 24px;
+	padding: 32px;
 	border-radius: 8px;
 	box-shadow: 0 9px 12px rgba(0,0,0,0.14);
 	margin-top: -64px;
+	visibility: hidden;
 }
 
 .contact-panel-3 {
 	position: relative;
 	width: 100%;
-	height: 540px;
+	height: auto;
+	background: rgba(255,255,255,1);
+	padding-top: 64px;
+}
+
+.map-title {
+	margin-bottom: 16px;
+}
+
+.map-address {
+	margin-bottom: 24px;
+	width: 100%;
+	max-width: 640px;
 }
 
 /* ==================== FOOTER ==================== */
