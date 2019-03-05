@@ -214,7 +214,14 @@
 	<script type="text/javascript" src="src\skrollr.stylesheets.min.js"></script>
 	<script type="text/javascript" src="src\skrollr.min.js"></script>
 	<script type="text/javascript">
-		var s = skrollr.init({forceHeight: false});
+		$(function () {
+			// initialize skrollr if the window width is large enough
+			if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+				skrollr.init({
+						forceHeight: false
+				});
+			}
+		});
 	</script>
 </body>
 </html>

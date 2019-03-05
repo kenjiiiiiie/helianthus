@@ -254,7 +254,7 @@
 	</div>
 
 	<div class="about-panel-3">
-		<div class="page-wrap-1">
+		<div class="page-wrap-1 page-wrap-no-padding">
 			<div id="aboutHeroImg3" class="about-hero-img-3">
 				<div id="aboutGenInfo" class="about-gen-info">
 					<h4 class="accent-100">What we are</h4>
@@ -438,7 +438,14 @@
 	<script type="text/javascript" src="src\skrollr.stylesheets.min.js"></script>
 	<script type="text/javascript" src="src\skrollr.min.js"></script>
 	<script type="text/javascript">
-		var s = skrollr.init({forceHeight: false});
+		$(function () {
+			// initialize skrollr if the window width is large enough
+			if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+				skrollr.init({
+						forceHeight: false
+				});
+			}
+		});
 	</script>
 </body>
 </html>
