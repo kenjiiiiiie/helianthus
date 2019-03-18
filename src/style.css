@@ -1101,7 +1101,7 @@ button {
 
 .about-line-h {
 	position: relative;
-	width: calc(100% - (100% / 3) + 5px);
+	width: calc(100% - (100% / 4) + 5px);
 	height: 4px;
 	background: rgba(0,0,0,0.12);
 	margin: 0 auto;
@@ -1118,7 +1118,7 @@ button {
 
 .about-chart-ppl {
 	position: relative;
-	width: calc(100% / 3);
+	width: calc(100% / 4);
 	height: auto;
 	margin: 0 auto;
 	transform-origin: center;
